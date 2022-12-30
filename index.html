@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Q & A about HTML, CSS & JS</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="questions">
+    <!-- questions -->
+    <div class="section-center">
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>1. What is HTML and HTML5?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>
+            HTML - Hypertext Markup Language is the standard markup language for creating web pages and web
+            applications. HTML5 is a markup language used for structuring and presenting content on the World Wide Web.
+            It is the fifth and current major version of the HTML standard.
+          </p>
+        </div>
+      </article>
+      <!-- end of single question -->
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>2. Features of HTML5?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>
+
+            1. Semantics: allowing you to describe more precisely what your content is.<br>
+            2. Connectivity: allowing you to communicate with the server in new and innovative ways.<br>
+            3. Offline and storage: allowing webpages to store data on the client-side locally and                 operate offline more efficiently.<br>
+            4. Multimedia: making video and audio first-class citizens in the Open Web.<br>
+            5. 2D/3D graphics and effects: allowing a much more diverse range of presentation                      options.<br>
+            6. Performance and integration: providing greater speed optimization and better usage                  of computer hardware.<br>
+            7. Device access: allowing for the usage of various input and output devices.<br>
+            8. Styling: letting authors write more sophisticated themes.<br>
+          </p>
+        </div>
+      </article>
+      <!-- end of single question -->
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>3. What is a virtual root and how do you create one?</p>
+          <!-- button -->
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>A virtual root is essentially a new web site in IIS. You’d create one in the MMC by either selecting “New Virtual Site” from the site context menu, or clicking “Create” in the Home Directory tab in the properties for any existing folder. Using the first method, you can also create a virtual root that points to a logical directory outside the current web root. The new virtual root is largely, although not completely, as configurable as a new web site.</p>
+        </div>
+      </article>
+      <!-- end of single question -->
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>4. How would you remotely administer IIS?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Windows Server comes with a limited terminal services server built in for remote administration of the server. Set it up as remote client and use the TS client or Remote Desktop Connection on the client to login. From there, use MMC as if you were logged on locally.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>5. How would you go about securing IIS and MS-SQL Server?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>1. Stay up to date on patches and keep security software (AV, firewall, IDS, maybe                   even packet logging, etc.) running.<br>
+              2. IIS authenticates against domain users (even if the domain is “Local Machine”).                  Make sure you have no spurious users, and secure everyone’s passwords. If possible,                 segregate public web machines into different ACL segments (e.g. A different domain).<br>
+              3. Be careful with security policies. The standard server install comes with hardened               LSP templates, which you should consider if you’re not experienced enough to build                  your own. Non-front tiers should have tight security policies barring anyone outside                the adjacent tiers (and maybe a test machine or two) from access.<br>
+
+          </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>6. How do I make a graphic a link in HTML?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>By Including the “img” tag between the “a href” tag and the “a” closing tag.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>7. What scripts ship with IIS ?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>iisweb.vsb to create, delete, start, stop, and list Web sites, iisftp.vsb to create, delete, start, stop, and list FTP sites, iisdir.vsb to create, delete, start, stop, and display virtual directories, iisftpdr.vsb to create, delete, start, stop, and display virtual directories under an FTP root, iiscnfg.vbs to export and import IIS configuration to an XML file.
+          </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>8. What’s the name of the user who connects to the Web site anonymously?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>IUSR_computername </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>9. What secure authentication and encryption mechanisms are supported by IIS?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Basic authentication, Digest authentication, Advanced digest authentication, Certificate-based Web transactions that use PKCS #7/PKCS #10, Fortezza, SSL, Server-Gated Cryptography, Transport Layer Security</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>10. Where’s ASP cache located on latest IIS ? </p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>On disk, as opposed to memory, as it used to be in older IIS.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>11. What is socket pooling? </p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Non-blocking socket usage, introduced in IIS 6.0. More than one application can use a given socket.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>12. What are JavaScript types?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Number, String, Boolean, Function, Object, Null, Undefined </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>13. How do you convert numbers between different bases in JavaScript?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Use the parseInt() function, that takes a string as the first parameter, and the base as a second parameter. So to convert hexadecimal 3F to decimal, use parseInt ("3F", 16); </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>14. What boolean operators does JavaScript support?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>&&, || and ! </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>15. What looping structures are there in JavaScript?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>for, while, do-while loops, but no foreach. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>16. How do you assign object properties?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>obj["age"] = 17 or obj.age = 17.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>17. What’s a way to append a value to an array?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>arr[arr.length] = value; </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>18. What is THIS keyword?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>It refers to the current object</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>19. What does isNaN function do?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Return true if the argument is not a number.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>20. What is negative infinity? </p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>It’s a number in JavaScript, derived by dividing negative number by zero.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>21. How to detect the operating system on the client machine?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>In order to detect the operating system on the client machine, the                   
+            navigator.appVersion</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>22. Where are cookies actually stored on the hard disk?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>This depends on the user's browser and OS.
+In the case of Netscape with Windows OS,all the cookies are stored in a single file called cookies.txt
+c:\Program Files\Netscape\Users\username\cookies.txt</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>23. What can javascript programs do?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Generation of HTML pages on-the-fly without accessing the Web server. The user can be given control over the browser like User input validation Simple computations can be performed on the client's machine The user's browser, OS, screen size, etc. can be detected Date and Time Handling.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>24. How to set a HTML document's background color?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>document.bgcolor property can be set to any appropriate color.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>25. Is a javascript script faster than an ASP script?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Yes. Since javascript is a client-side script it does require the web server's help for its computation,so it is always faster than any server-side script like ASP,PHP,etc.
+</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>26. Are Java and JavaScript the Same?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>No. java and javascript are two different languages. Java is a powerful object - oriented programming language like C++,C whereas Javascript is a client-side scripting language with some limitations.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>27. Is it possible to break JavaScript Code into several lines?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Breaking within a string statement can be done by using a backslash, ‘\,’ at the end of the first line.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>28. What is negative Infinity?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>29. What is the difference between an alert box and a confirmation box?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>An alert box displays only one button which is the OK button whereas the Confirm box displays two buttons namely OK and cancel.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>30. What does the "Access is Denied" IE error mean?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>The "Access Denied" error in any browser is due to the following reason.A javascript in one window or frame is tries to access another window or frame whose document's domain is different from the document containing the script.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>31. What is a prompt box?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Breaking is possible within a string statement by using a backslash \ at the end but               not within any other javascript statement. that is,<br>
+              <br>document.write("Hello \
+              <br>world");
+              <br>is possible but not
+              <br>document.write \
+              <br>("hello world"); </p>
+        </div>
+      </article>
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>32. Difference between “==” and “===”?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>“==” checks only for equality in value, whereas “===” is a stricter equality test and returns false if either the value or the type of the two variables are different.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>33. What is the use of isNaN function?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>isNan function returns true if the argument is not a number; otherwise, it is false.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>34. How to comment javascript code?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Use // for line comments and<br>/*<br>
+*/ for Multiline comments </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>35. Name the numeric constants representing max,min values</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Number.MAX_VALUE<br>Number.MIN_VALUE </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>36. What does javascript null mean?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>The null value is a unique value representing no value or no object. It implies no object, or null string,no valid Boolean value, no number and no array object. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>37. What does undefined value mean in javascript?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Undefined value means the variable used in the code doesnt exist or is not assigned any value or the property doesn't exist.</p>
+        </div>
+      </article>
+      <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>38. What would be the result of 3+2+”7″?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Since 3 and 2 are integers, they will be added numerically. And since 7 is a string, its concatenation will be done. So the result would be 57.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>39. What is the difference between undefined value and null value?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>1. Undefined value cannot be explicitly stated that is there is no keyword called                   undefined whereas null value has keyword called null<br>
+            2. typeof undefined variable or property returns undefined whereas typeof null value                returns object.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>40. Does javascript have the concept level scope?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>No. JavaScript does not have block level scope,all the variables declared inside a function possess the same level of scope unlike c,c++,java. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>41. What are undefined and undeclared variables?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Undeclared variables are those that are not declared in the program (do not exist at               all), trying to read their values gives runtime error.But if undeclared variables are              assigned then implicit declaration is done . Undefined variables are those that are                not assigned any value but are declared in the program. Trying to read such variables              gives special value called undefined value. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>42. What is === operator ?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>=== is strict equality operator ,it returns true only when the two operands are                   having the same value without any type conversion. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>43. What does the delete operator do?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>The delete operator is used to delete all the variables and objects used in the program ,but it does not delete variables declared with var keyword. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>44. What does break and continue statements do?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Continue statement continues the current loop (if label not specified) in a new iteration whereas break statement exits the current loop. </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>45. How to create a function using function constructor?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>The following example illustrates this
+It creates a function called square with argument x and returns x multiplied by itself.<br>var square = new Function ("x","return x*x"); </p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>46. What is a prompt box?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>A prompt box is a box that allows the user to enter input by providing a text box. A label and box will be provided to enter the text or number.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>47. What is ‘this’ keyword in JavaScript?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>‘This’ keyword refers to the object from where it was called.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>48. What is the difference between ViewState and SessionState?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>1. ‘ViewState’ is specific to a page in a session.<br>2. ‘SessionState’ is specific to user-specific data that can be accessed across all web application pages.</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>49. Does JavaScript support automatic type conversion?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>Yes, JavaScript does support automatic type conversion. It is the common way of type conversion used by JavaScript developers</p>
+        </div>
+      </article>
+       <!-- single question -->
+      <article class="question">
+        <!-- question title -->
+        <div class="question-title">
+          <p>50. How to read and write a file using JavaScript?</p>
+          <button type="button" class="question-btn">
+            <span class="plus-icon">
+              <i class="far fa-plus-square"></i>
+            </span>
+            <span class="minus-icon">
+              <i class="far fa-minus-square"></i>
+            </span>
+          </button>
+        </div>
+        <!-- question text -->
+        <div class="question-text">
+          <p>There are two ways to read and write a file using JavaScript<br>1. Using JavaScript extensions<br>2. Using a web page and Active X objects
+</p>
+        </div>
+      </article>
+  </section>
+  </main>
+  <!-- javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
