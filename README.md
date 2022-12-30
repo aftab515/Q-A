@@ -1,4 +1,4 @@
-# Question and Answer
+# Questions and Answers
 
 This is an extremely short venture which I made in the underlying days, when I began the JavaScript.
 
